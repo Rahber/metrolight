@@ -1,0 +1,52 @@
+<div class="met-section">
+<!-- BEGIN forumrow -->
+	<!-- IF (forumrow.S_IS_CAT and not forumrow.S_FIRST_ROW) or forumrow.S_NO_CAT  -->
+				</div>
+			</div>
+		</div>
+	<!-- ENDIF -->
+
+	<!-- IF forumrow.S_IS_CAT or forumrow.S_FIRST_ROW  or forumrow.S_NO_CAT  -->
+		<div class="met-row {SCRIPT_NAME}">
+			<div class="inner">
+				<div class="met-cat-header">
+					<!-- IF forumrow.S_IS_CAT --><a href="{forumrow.U_VIEWFORUM}">{forumrow.FORUM_NAME}</a><!-- ELSE --><span class="tt">{L_FORUM}</span><!-- ENDIF -->
+				  </div><div class="icon-arrow-down clpse right"></div>
+				
+				<div class="met-cat-cat">
+			<!-- ENDIF -->
+
+	<!-- IF not forumrow.S_IS_CAT -->
+		<div class="row">
+			
+				<!-- IF S_ENABLE_FEEDS and forumrow.S_FEED_ENABLED --><!-- <a class="feed-icon-forum" title="{L_FEED} - {forumrow.FORUM_NAME}" href="{U_FEED}?f={forumrow.FORUM_ID}"><img src="{T_THEME_PATH}/images/feed.gif" alt="{L_FEED} - {forumrow.FORUM_NAME}" /></a> --><!-- ENDIF -->
+
+					
+					<a href="{forumrow.U_VIEWFORUM}" title="{forumrow.FORUM_DESC}" class="forumtitle">{forumrow.FORUM_NAME}</a><!-- IF forumrow.U_UNAPPROVED_TOPICS --><a href="{forumrow.U_UNAPPROVED_TOPICS}">{UNAPPROVED_IMG}</a><!-- ENDIF -->
+					
+				
+					
+				<!-- IF forumrow.CLICKS -->
+					<span class="f-details" title="{L_REDIRECTS}"> {forumrow.CLICKS}</span>
+				<!-- ELSEIF not forumrow.S_IS_LINK -->
+					<span class="f-details" title="{L_TOPICS}">{forumrow.TOPICS} </span>
+					<span class="f-details" title="{L_POSTS}">{forumrow.POSTS}  </span>
+				<!-- ENDIF -->
+		</div>
+	<!-- ENDIF -->
+
+	<!-- IF forumrow.S_LAST_ROW -->
+			
+			
+			</div>
+		</div>
+	<!-- ENDIF -->
+
+<!-- BEGINELSE -->
+	<div class="panel">
+		<div class="inner">
+		<strong>{L_NO_FORUMS}</strong>
+		</div>
+	</div>
+<!-- END forumrow -->
+</div></div>

@@ -1,0 +1,41 @@
+<div class="met-charms-header"><div class="gb-arrow icon-arrow-left" title="{L_CANCEL}" > </div></div>
+<!-- IF S_DISPLAY_SEARCH and not S_IN_SEARCH -->
+			<div class="met-charms-search">
+			<h2>{L_SEARCH}</h2>
+			<div class="met-forms">
+				<form action="{U_SEARCH}" method="get" id="search">
+				     <div class="input-control text">
+					<input name="keywords" id="mey-keywords" type="text" maxlength="128" title="{L_SEARCH_KEYWORDS}" class="with-helper" value="<!-- IF SEARCH_WORDS-->{SEARCH_WORDS}<!-- ELSE -->{L_SEARCH_MINI}<!-- ENDIF -->" onclick="if(this.value=='{LA_SEARCH_MINI}')this.value='';" onblur="if(this.value=='')this.value='{LA_SEARCH_MINI}';" />
+					</div>
+					
+					<input class="btn" value="{L_SEARCH}" type="submit" /><br />
+					<a href="{U_SEARCH}" title="{L_SEARCH_ADV_EXPLAIN}">{L_SEARCH_ADV}</a> {S_SEARCH_HIDDEN_FIELDS}
+				
+				</form>
+			</div></div>
+		<!-- ENDIF -->
+		
+<div class="met-charms-icons"><!-- IF U_EMAIL_TOPIC --><a href="{U_EMAIL_TOPIC}" title="{L_EMAIL_TOPIC}" class="tkt-link">{L_EMAIL_TOPIC}</a><br /><!-- ENDIF -->
+<!-- IF U_EMAIL_PM --><a href="{U_EMAIL_PM}" title="{L_EMAIL_PM}" class="tkt-link"">{L_EMAIL_PM}</a><br /><!-- ENDIF -->
+<!-- IF U_PRINT_TOPIC --><a href="{U_PRINT_TOPIC}" title="{L_PRINT_TOPIC}" accesskey="p" class="tkt-link">{L_PRINT_TOPIC}</a><br /><!-- ENDIF -->
+<!-- IF U_PRINT_PM --><a href="{U_PRINT_PM}" title="{L_PRINT_PM}" accesskey="p" class="cicons print">{L_PRINT_PM}</a><br /><!-- ENDIF -->
+</div>
+
+<div class="met-charms-btm">
+
+			
+				<!-- IF not S_IS_BOT -->
+					<!-- IF S_WATCH_FORUM_LINK --><a href="{S_WATCH_FORUM_LINK}" class="tkt-link" title="{S_WATCH_FORUM_TITLE}">{S_WATCH_FORUM_TITLE}</a><br /><!-- ENDIF -->
+					<!-- IF U_WATCH_TOPIC --><a href="{U_WATCH_TOPIC}" class="tkt-link" title="{L_WATCH_TOPIC}">{L_WATCH_TOPIC}</a><br /><!-- ENDIF -->
+					<!-- IF U_BOOKMARK_TOPIC --><a href="{U_BOOKMARK_TOPIC}" class="tkt-link" title="{L_BOOKMARK_TOPIC}">{L_BOOKMARK_TOPIC}</a><br /><!-- ENDIF -->
+					<!-- IF U_BUMP_TOPIC --><a href="{U_BUMP_TOPIC}" class="tkt-link" title="{L_BUMP_TOPIC}">{L_BUMP_TOPIC}</a><br /><!-- ENDIF -->
+				<!-- ENDIF -->
+		</ul></div>
+		
+<div class="met-charms-sub">
+	
+	<!-- IF U_TEAM --><a href="{U_TEAM}" class="tkt-link">{L_THE_TEAM}</a><!-- ENDIF --><br />
+	<!-- IF not S_IS_BOT --><a href="{U_DELETE_COOKIES}" class="tkt-link">{L_DELETE_COOKIES}</a><!-- ENDIF --><br />
+	<span class="tkt-link">{S_TIMEZONE}<span>
+		
+</div>
