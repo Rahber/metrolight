@@ -811,3 +811,9 @@ select {
 	margin: 0 auto;
 	width: 500px;
 }
+
+.error {
+	color: black;
+	padding: 10px;
+	background: #F5F3F3;
+}
