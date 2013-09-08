@@ -643,11 +643,6 @@ select{
 	font-size:20px;
 }
 
-.section-ucp #login {
-	padding-top: 20px;
-	margin: 0 auto;
-	width: 500px;
-}
 
 #format-buttons select {
 	margin-top:8px;

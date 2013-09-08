@@ -23,9 +23,9 @@ var totalWidth = 0;
 			$(".postbody").width('76%');
 			$(".display-options").width(totalWidth);
 			$(".section-viewtopic .lbl-hd").removeClass('hide');
-			
+			$("#login").width(500);
 		
-		} else{
+		} else if(totalWidth<750 && totalWidth>350){
 
 			$(".mtt").width(totalWidth);
 			$(".met-smod").addClass('hide');
@@ -46,7 +46,32 @@ var totalWidth = 0;
 			$(".topic-actions").addClass('hide');
 			$("#page-footer").width(totalWidth);
 			$(".section-viewtopic .lbl-hd").addClass('hide');
+			$("#login").width(500);
+		}else{
+        totalWidth = 350;
+		
+		$("#page-footer").width(totalWidth);
+			$(".mtt").width(totalWidth);
+			$(".section-viewforum .display-options").addClass('hide');
+			$(".section-viewtopic .lbl-hd").addClass('hide');
+			$(".met-smod").addClass('hide');
+			$(".topic-actions").addClass('hide');
+			$(".s-name").addClass('met-lg-c').addClass('met-no-f');
+			$(".pmt").addClass('hide');
+			$(".pull-right").addClass('hide');
+			$(".met-row").width(totalWidth); 
+			$(".met-row").css( "margin", "0px" );
 			
+			$(".postprofile").addClass('hide');
+			$(".postbody").width('100%');
+			$(".display-options").width(totalWidth);
+			$(".met-section").width(totalWidth);
+			$(".met-header").width(totalWidth).removeClass('fixedf');
+			$(".met-stats").width(totalWidth);
+			$("#page-body").width(totalWidth);
+			$(".forumbg").width(totalWidth);
+			$("#login").width('auto');
+
 		}
 		
 		
@@ -76,10 +101,10 @@ var totalWidth = 0;
 			$(".s-name").removeClass('met-lg-c').removeClass('met-no-f');	
 			$(".section-viewtopic .lbl-hd").removeClass('hide');
 			$(".postbody").width('76%');
-
+			$("#login").width(500);
 			
-		}else if(totalWidth<750){
-		
+		}else if(totalWidth<750 && totalWidth>350){
+		  
 			$("#page-footer").width(totalWidth);
 			$(".mtt").width(totalWidth);
 			$(".section-viewforum .display-options").addClass('hide');
@@ -100,8 +125,34 @@ var totalWidth = 0;
 			$(".met-stats").width(totalWidth);
 			$("#page-body").width(totalWidth);
 			$(".forumbg").width(totalWidth);
+            $("#login").width(500);
+		}else{
+        totalWidth = 350;
+		
+		$("#page-footer").width(totalWidth);
+			$(".mtt").width(totalWidth);
+			$(".section-viewforum .display-options").addClass('hide');
+			$(".section-viewtopic .lbl-hd").addClass('hide');
+			$(".met-smod").addClass('hide');
+			$(".topic-actions").addClass('hide');
+			$(".s-name").addClass('met-lg-c').addClass('met-no-f');
+			$(".pmt").addClass('hide');
+			$(".pull-right").addClass('hide');
+			$(".met-row").width(totalWidth); 
+			$(".met-row").css( "margin", "0px" );
+			$("#login").width('auto');
+			$(".postprofile").addClass('hide');
+			$(".postbody").width('100%');
+			$(".display-options").width(totalWidth);
+			$(".met-section").width(totalWidth);
+			$(".met-header").width(totalWidth).removeClass('fixedf');
+			$(".met-stats").width(totalWidth);
+			$("#page-body").width(totalWidth);
+			$(".forumbg").width(totalWidth);
 
-		}  } );
+		}
+
+}		);
 		
 		
 		
