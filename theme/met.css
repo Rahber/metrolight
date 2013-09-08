@@ -805,3 +805,9 @@ select {
 .shwp {
 	margin-top: 1px !important;
 }
+
+ #login{
+	padding-top: 20px;
+	margin: 0 auto;
+	width: 500px;
+}

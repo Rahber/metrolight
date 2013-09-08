@@ -69,40 +69,40 @@ select{
 }
 
 h1 {
-  font-size:18px;
+	font-size:18px;
 	font-weight: 300;
 	letter-spacing: 0.02em;
 	line-height: 20px;
 	text-decoration: none;
 }
 h2 {
-  font-size:30px;
-  margin:20px 0px;
+	font-size:30px;
+	margin:20px 0px;
 	font-weight: 300;
 	letter-spacing: 0.02em;
-	line-height: 20px;
+	line-height: 30px;
 	text-decoration: none;
   
 }
 h3 {
-  font-size: 1.17em;
-  margin: 1em 0;
+	font-size: 1.17em;
+	margin: 1em 0;
 }
 h4 {
-  font-size: 1em;
-  margin: 1.33em 0;
+	font-size: 1em;
+	margin: 1.33em 0;
 }
 h5 {
-  font-size: 0.83em;
-  margin: 1.67em 0;
+	font-size: 0.83em;
+	margin: 1.67em 0;
 }
 h6 {
-  font-size: 0.75em;
-  margin: 2.33em 0;
+	font-size: 0.75em;
+	margin: 2.33em 0;
 }
 
 abbr[title] {
-  border-bottom: 1px dotted;
+	border-bottom: 1px dotted;
 }
 
 b,
