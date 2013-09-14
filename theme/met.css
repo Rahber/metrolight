@@ -440,6 +440,7 @@ a.sendemail {
 	margin-top:-10px;
 	padding: 0 10px;
 }
+
 .user{
 	padding:0 40px;
 }
@@ -662,8 +663,8 @@ select {
 	-o-border-radius: 0;
 	border-radius: 0;
 	-webkit-appearance: none;
-	background-color: #ccc;
-	border: 1px transparent solid;
+	background-color: #fff;
+	border: 1px solid #c0c0c0;
 	color: black;
 	outline: 0;
 	margin: 0;
@@ -679,6 +680,15 @@ select {
 	*padding-top: 2px;
 	*padding-bottom: 1px;
 	*height: auto;
+}
+
+select:hover{
+	border: 1px solid #eaeaea;
+}
+
+input:focus,select:focus,textarea:focus{
+	border:1px solid #ccc;
+	outline:#0072C6 groove 1px;
 }
 
 .jmpbox  select,#quick-mod-select{
@@ -811,4 +821,27 @@ select {
 	color: black;
 	padding: 10px;
 	background: #F5F3F3;
+}
+
+.forumbg.forumbg-table {
+	width: 100%;
+}
+
+.met-forms .topic-actions{
+	margin-bottom :0px;
+	text-align: right;
+}
+
+.table1 th,.table1 th a{
+	color:black;
+}
+
+.table1{
+	border:1px solid #ccc;
+}
+
+.online{
+		background-image: url('{T_THEME_PATH}/images/on.png');	
+		background-repeat: no-repeat;
+		background-position: top right;
 }

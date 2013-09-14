@@ -261,7 +261,7 @@ ul.topiclist dd.searchextra {
 }
 
 .search .postbody {
-	width: 68%
+	width: 68% !important;
 }
 
 /* Topic review panel
@@ -376,7 +376,7 @@ dl.faq dt {
 }
 
 .posthilit {
-	background-color: #f3f3f3;
+	background-color: #fff;
 	color: #BCBCBC;
 	padding: 0 2px 1px 2px;
 }
